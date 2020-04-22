@@ -1,0 +1,14 @@
+/* -----------------start of our blog--------------------------------- */
+.card .card-info h5 a {
+    color: #343a40;
+    font-weight: 700;
+    font-size: 1.25rem;
+  }
+  .card .card-info h6 a {
+    color: #e65f78;
+  }
+  .card .card-info .read {
+    color: #6c757d;
+    font-weight: 700;
+  }
+  /* -----------------end of our blog--------------------------------- */
