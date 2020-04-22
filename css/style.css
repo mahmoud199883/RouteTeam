@@ -1,3 +1,68 @@
+
+
+/*
+
+ start styling header section
+ 
+ */
+
+.navbar-nav .nav-item a{
+  color: #17a2b8 !important;
+  font-size: 1.2rem;
+}
+.navbar-nav .nav-item .myactive{
+  color: #fff !important;
+}
+.navbar-nav .nav-item a:hover{
+  color: #fff !important;
+}
+.header-bac
+{
+  background-image: url(../images/back.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+.overlay
+{
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  position: relative;
+}
+.overlay .data
+{
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.overlay .data h1{
+  line-height: 88px;
+  font-size: 4em;
+  font-family: 'Playfair Display', serif;
+  color: #fff;
+}
+.overlay .data p{
+  line-height: 42.5px;
+  font-size: 1.75em;
+  color: rgba(255, 255, 255, 0.85);
+  font-family: 'Playfair Display', serif;
+}
+.overlay .data button a{
+  line-height: 45.5px;
+  font-size: 1.35em;
+  color: rgba(255, 255, 255, 0.85);
+  padding: 5px 20px;
+}
+/*
+
+ end styling header section
+ 
+ */
+
+
 /* -----------------start of our blog--------------------------------- */
 .card .card-info h5 a {
     color: #343a40;
