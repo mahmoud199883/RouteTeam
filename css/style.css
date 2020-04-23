@@ -111,3 +111,17 @@
     font-weight: 700;
   }
   /* -----------------end of our blog--------------------------------- */
+
+  /* -----------------start of Medhat section --------------------------------- */
+ .third
+ {
+  background-color: #3498db;
+    color: #dce8f0;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+ }
+.text .mm
+ {
+  color:#3498db ;
+ }
+  /* -----------------End of Medhat section--------------------------------- */
