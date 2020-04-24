@@ -125,3 +125,71 @@
   color:#3498db ;
  }
   /* -----------------End of Medhat section--------------------------------- */
+
+   /* -----------------start of ahmed section --------------------------------- */
+   
+  
+#footer{
+  padding: 5rem;
+}
+.list-ico i {
+  color: #0078ff;
+  margin: 10px 10px;
+}
+
+.list-ico li {
+
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.socials .social-counter{
+  width: 40px;
+  height: 40px;
+  font-size: 1.7rem;
+  border-radius: 50%;
+  line-height: 1.4;
+  margin: 0 18px 0 0;
+  box-shadow: 0 0 0 3px #999999;;
+  transition: all 500ms ease;
+}
+
+.socials li {
+
+  list-style: none;
+  padding-bottom: 10px;
+}
+ 
+.socials {
+  padding: 7rem 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+
+.socials .social-counter:hover {
+      background-color: #0078ff;
+      color: #fff;
+      box-shadow: 0 0 0 3px #cde1f8;
+      transition: all 500ms ease;
+  }    
+
+.social-counter a {
+
+  color: #1e1e1e;
+  font-size: 1.5rem;
+}   
+
+.credits{
+
+    color: #999;
+}
+
+.credits a {
+  color: #999;
+  text-decoration: none;
+}
