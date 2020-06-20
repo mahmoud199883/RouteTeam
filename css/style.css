@@ -2,7 +2,8 @@ body
 {
   direction: rtl;
   height: 2000px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Lateef', cursive;
+  font-size: 2rem;
 }
 
 
@@ -270,44 +271,213 @@ div.h4 {
 
 
 /* end header */
-.currentsite
-{
-  margin-top: 8rem;
-}
-.sites
-{
-  position: relative;
-}
-.overlaysite
-{
-  position: absolute;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  background-color: transparent;
-  transition: all 0.5s ease-in-out;
-}
-.overlaysite:hover
-{
-  background-color: rgba(0, 0, 0, 0.3);
 
-}
-.overlaysite .collect
+
+
+.site-of-the-day
 {
-  position:absolute;
-  top: 10px ;
-  padding: 10px 5px;
+  margin-top: 4rem;
+}
+
+.site-of-the-day header 
+{
+  font-size: 3rem;
+}
+
+.line
+{
+  width: 60px;
+  height: 1px;
+  background-color:  #666;
+  transition: .5s;
+}
+
+
+.site1 
+{
+  overflow: hidden;
+}
+
+
+.sites:hover .line
+{
+  width: 100px;
+}
+
+
+.card 
+{
+  overflow: hidden !important;
+}
+
+
+
+.over-lay
+  {
+    width: 348px;
+    height: 232px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 10;   
+    opacity: 0;
+    transition: 1s;
+    overflow: auto;
+    
+  
+    
+  }
+
+  .likes
+  {
+    width: 70px;
+    height: 32px;
+    border: 1px solid rgba(255,255,255,0.5);
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    
+  }
+
+  .likes i 
+  {
+   font-size: 1.2rem;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   position: absolute;
+   color: white;
+  }
+
+  .likes:hover i
+  {
+    color: #ff655c;
+  }
+
+  .collect
+{
+    width: 80px;
+    height: 32px;
+    border: 1px solid rgba(255,255,255,0.5);
+    position: absolute;
+    position: relative;
+    top: 5px;
+    right: 90px;
+}
+
+
+
+.collect p
+{
+  font-size: 1.5rem;
+
+  top: 50%;
   left: 50%;
-  color: #fff;
-  font-size: 25px;
+  transform: translate(-50%,-50%);
+  position: absolute;
+  color: white;
+}
+
+.collect:hover p 
+{
+  color: #ff655c;
+}
+
+.go 
+{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.5);
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+}
+
+.go i 
+{
+
+  font-size: 1.2rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  position: absolute;
+  color: white;
 
 }
-.collect span{
- cursor: pointer;
-  padding:5px;
-  border: 1px solid #fff;
-  border-radius: 10px;
+
+.go:hover i 
+{
+  color: #ff655c;
 }
+
+
+.site1 
+  {
+    position: relative;
+    
+  }
+
+  .site1:hover .over-lay
+  {
+   opacity: 1;
+   
+  
+  }
+
+  .site1:hover .cont img
+  {
+    transform: scale(1.1);
+    transition: ease 1s
+  }
+
+  .cont
+  {
+    overflow: hidden;
+  }
+
+ .card-body 
+{
+  
+  text-align: right;
+}
+
+.circle
+{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+#photo1
+{
+  background-image: url(../images/png-transparent-bird-of-prey-logo-beak-desktop-bird-animals-computer-logo.png);
+  background-position: center center;
+  background-size: 100%;
+}
+
+#photo2
+{
+  background-image: url(../images/png-transparent-phoenix-logo-flame-football-s-daquan-leaf-flower-symbol.png);
+  background-position: center center;
+  background-size: 100%;
+}
+
+#photo3
+{
+  background-image: url(../images/pic01.jpg);
+  background-position: center center;
+  background-size: 100%;
+}
+
+.who p 
+{
+  font-size:1.4rem }
+
+
+
+  
+
+  
+
 
 
