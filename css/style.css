@@ -1,195 +1,313 @@
-
-
-/*
-
- start styling header section
- 
- */
-
-.navbar-nav .nav-item a{
-  color: #17a2b8 !important;
-  font-size: 1.2rem;
-}
-.navbar-nav .nav-item .myactive{
-  color: #fff !important;
-}
-.navbar-nav .nav-item a:hover{
-  color: #fff !important;
-}
-.header-bac
+body
 {
-  background-image: url(../images/back.jpg);
+  direction: rtl;
+  height: 2000px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+
+/* start header */
+header
+{
+  overflow: hidden;
+}
+.iconheader
+{
+  padding: 15px;
+  background-color: rgb(10, 10, 10);
+  color: wheat !important;
+}
+r_social i
+{
+  font-size: 20px;
+  padding: 0px 5px;
+  color: black;
+}
+
+
+/* nav part */
+
+.leftMenu
+{
+  text-align: right;
+    position: fixed;
+    top: 0;
+    right:-250px;
+    width: 250px;
+    height: 100vh;
+    z-index: 9999999999999;
+}
+.leftMenu a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+.leftMenu a:hover{
+    color: #ff655c;
+}
+.leftMenu li {
+    padding: 20px 0;
+    list-style: none;
+    padding-top: 500px;
+  	opacity: 0;
+}
+.rightMenu{
+    position: fixed;
+   	top: 0;
+    right: 0;
+	  width: 60px;
+  	height: 11vh;
+    z-index: 55555555;
+      background-color:black!important;
+}
+
+.rightMenu i {
+    font-size: 30px;
+    color: white !important;
+}
+
+#triggle{
+    cursor: pointer;
+    font-style: normal;
+}
+
+.open::before {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    content: "\f039";
+}
+.close::before {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    content: "\f00d";
+}
+
+
+
+
+
+/* header site of day */
+
+.siteofday
+{
   height: 100vh;
-  background-position: center;
-  background-size: cover;
+  position: relative;
+  text-align: center;
+  background-image: url(../images/back.jpg);
 }
-.overlay
+.siteofday .overlay
 {
-  background-color: rgba(0, 0, 0, 0.6);
-  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
+}
+.siteofday .overlay:hover
+{
+  background-color: rgba(0, 0, 0, 0.1);
+  color: black !important;
+}
+.siteday_info h2
+{
+  font-size: 30px ;
+  font-weight: 900;
+  color: black;
+}
+
+/* header progree  part */
+
+.progress {
+  width: 100px;
+  height: 100px;
+  background: none;
   position: relative;
 }
-.overlay .data
+.pro_bac
 {
-  position: absolute;
-  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6) !important;
+}
+.progress::after {
+  content: "";
   width: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-}
-.overlay .data h1{
-  line-height: 88px;
-  font-size: 4em;
-  font-family: 'Playfair Display', serif;
-  color: #fff;
-}
-.overlay .data p{
-  line-height: 42.5px;
-  font-size: 1.75em;
-  color: rgba(255, 255, 255, 0.85);
-  font-family: 'Playfair Display', serif;
-}
-.overlay .data button a{
-  line-height: 45.5px;
-  font-size: 1.35em;
-  color: rgba(255, 255, 255, 0.85);
-  padding: 5px 20px;
-}
-/*
-
- end styling header section
- 
- */
-
- /* second section*/
- body
-{
-         font-family: "Scope One", serif;
-         background-color: #FAFAFA;
-
-}
-
-
-.img-cont
-{
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
-    border: 1px solid rgb(236, 231, 231) ;
-    background-color: white;
-}
-
-.text p 
-{
-    color: #999999;
-}
-
-@media (min-width:750px) and (max-width:1200px) 
-{
-    .img-cont
-    { width: 230px;
-      height: 230px;
-      border-radius: 50%;
-     }
-
-   
-}
-/* end of second section */
-
-/* -----------------start of our blog--------------------------------- */
-.card .card-info h5 a {
-    color: #343a40;
-    font-weight: 700;
-    font-size: 1.25rem;
-  }
-  .card .card-info h6 a {
-    color: #e65f78;
-  }
-  .card .card-info .read {
-    color: #6c757d;
-    font-weight: 700;
-  }
-  /* -----------------end of our blog--------------------------------- */
-
-  /* -----------------start of Medhat section --------------------------------- */
- .third
- {
-  background-color: #3498db;
-    color: #dce8f0;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
- }
-.text .mm
- {
-  color:#3498db ;
- }
-  /* -----------------End of Medhat section--------------------------------- */
-
-   /* -----------------start of ahmed section --------------------------------- */
-   
-  
-#footer{
-  padding: 5rem;
-}
-.list-ico i {
-  color: #0078ff;
-  margin: 10px 10px;
-}
-
-.list-ico li {
-
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 0;
-}
-
-.socials .social-counter{
-  width: 40px;
-  height: 40px;
-  font-size: 1.7rem;
+  height: 100%;
   border-radius: 50%;
-  line-height: 1.4;
-  margin: 0 18px 0 0;
-  box-shadow: 0 0 0 3px #999999;;
-  transition: all 500ms ease;
-}
-
-.socials li {
-
-  list-style: none;
-  padding-bottom: 10px;
-}
- 
-.socials {
-  padding: 7rem 0;
+  border: 6px solid #eee;
   position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.progress>span {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.progress .progress-left {
+  left: 0;
+}
+
+.progress .progress-bar {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border-width: 6px;
+  border-style: solid;
+  position: absolute;
+  top: 0;
+}
+
+.progress .progress-left .progress-bar {
+  left: 100%;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  border-left: 0;
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
+}
+
+.progress .progress-right {
+  right: 0;
+}
+
+.progress .progress-right .progress-bar {
+  left: -100%;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border-right: 0;
+  -webkit-transform-origin: center right;
+  transform-origin: center right;
+}
+
+.progress .progress-value {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+div.h4 {
+  line-height: 1rem;
+}
+
+
+
+
+.signup
+{
+  position: fixed;
+  display: none;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 99999998888;
+  
+}
+.myclose
+{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+.signupdata
+{
+  display: flex;
+  height: 100%;
+}
+.signupcon
+{
+  position: absolute;
+  align-content: center;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 100%;
+}
+.signin
+{
+  position: fixed;
+  display: none;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 99999998888;
+  
+}
+.myclosesignin
+{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+.signindata
+{
+  display: flex;
+  height: 100%;
+}
+.signincon
+{
+  position: absolute;
+  align-content: center;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 100%;
+}
+
+
+
+/* end header */
+.currentsite
+{
+  margin-top: 8rem;
+}
+.sites
+{
+  position: relative;
+}
+.overlaysite
+{
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: transparent;
+  transition: all 0.5s ease-in-out;
+}
+.overlaysite:hover
+{
+  background-color: rgba(0, 0, 0, 0.3);
+
+}
+.overlaysite .collect
+{
+  position:absolute;
+  top: 10px ;
+  padding: 10px 5px;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 25px;
 
+}
+.collect span{
+ cursor: pointer;
+  padding:5px;
+  border: 1px solid #fff;
+  border-radius: 10px;
 }
 
 
-.socials .social-counter:hover {
-      background-color: #0078ff;
-      color: #fff;
-      box-shadow: 0 0 0 3px #cde1f8;
-      transition: all 500ms ease;
-  }    
-
-.social-counter a {
-
-  color: #1e1e1e;
-  font-size: 1.5rem;
-}   
-
-.credits{
-
-    color: #999;
-}
-
-.credits a {
-  color: #999;
-  text-decoration: none;
-}
