@@ -6,6 +6,8 @@ let menu = $("#triggle"),
 leftMenu= $(".leftMenu"),
 rightMenu= $(".rightMenu"),
 menu_item=$(".nav-item li")
+sites=$(".site-of-the-day")
+vote=$(".vote-now")
 menu.click(function(){
     let widthleftmenu = leftMenu.outerWidth();
     // console.log(menu.attr("class"))
@@ -14,6 +16,8 @@ menu.click(function(){
         menu.removeClass("open").addClass("close");
         leftMenu.animate({"right":`0px`},1000);
         rightMenu.animate({"right":`${widthleftmenu}`},1000);
+        sites.animate({"padding-right":"100px"},1000)
+        vote.animate({"padding-right":"100px"},1000)
         for(let i=1 ;i<=menu_item.length;i++)
         {
             $(`.item${i}`).animate({"opacity":"1","paddingTop":"25px"},i*100+1000)
@@ -22,6 +26,8 @@ menu.click(function(){
     else{
         menu.removeClass("close").addClass("open");
         leftMenu.animate({"right":`-${widthleftmenu}`},1000);
+        sites.animate({"padding-right":"0px"},1000)
+        vote.animate({"padding-right":"0px"},1000)
         rightMenu.animate({"right":`0px`},1000,function(){
             menu_item.animate({"opacity":"0","paddingTop":"500px"},1000)
         });
