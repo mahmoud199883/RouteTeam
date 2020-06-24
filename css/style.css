@@ -1,7 +1,6 @@
 body
 {
   direction: rtl;
-  height: 2000px;
   font-family: 'Lateef', cursive;
   font-size: 2rem;
 }
@@ -17,7 +16,7 @@ header
 .iconheader
 {
   padding: 15px;
-  background-color: rgb(10, 10, 10);
+  background-color: black;
   color: wheat !important;
 }
 r_social i
@@ -30,7 +29,7 @@ r_social i
 
 /* nav part */
 
-.leftMenu
+.rightMenu
 {
   text-align: right;
     position: fixed;
@@ -40,21 +39,21 @@ r_social i
     height: 100vh;
     z-index: 9999999999999;
 }
-.leftMenu a {
+.rightMenu a {
     color: #fff;
     text-decoration: none;
     transition: all 0.3s;
 }
-.leftMenu a:hover{
+.rightMenu a:hover{
     color: #ff655c;
 }
-.leftMenu li {
+.rightMenu li {
     padding: 20px 0;
     list-style: none;
     padding-top: 500px;
   	opacity: 0;
 }
-.rightMenu{
+.leftMenu{
     position: fixed;
    	top: 0;
     right: 0;
@@ -64,7 +63,7 @@ r_social i
       background-color:black!important;
 }
 
-.rightMenu i {
+.leftMenu i {
     font-size: 30px;
     color: white !important;
 }
@@ -197,6 +196,7 @@ div.h4 {
 }
 
 
+/* signup  and signin part */
 
 
 .signup
@@ -274,19 +274,38 @@ div.h4 {
 
 
 
-.site-of-the-day
-{
-  margin-top: 4rem;
-}
+/* common style for pages  */
 
 .site-cont
 {
   background-color: rgb(221, 221, 221);
+  padding-top: 8rem;
 }
-
 .site-of-the-day header 
 {
   font-size: 3rem;
+}
+.myheaderdata
+{
+  /* background-color: rgba(0, 0, 0, 0.3); */
+  padding: 0px 10px;
+  color: rgb(23, 162, 184);
+  
+}
+.myheaderdata p
+{
+  padding: 10px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+}
+.myheaderdata a
+{
+  text-decoration:none;
+  color: rgb(23, 162, 184);
+}
+.myheaderdata a :hover
+{
+  color: #ff655c;
 }
 
 .line
@@ -296,27 +315,18 @@ div.h4 {
   background-color:  #666;
   transition: .5s;
 }
-
-
 .site1 
 {
   overflow: hidden;
 }
-
-
 .sites:hover .line
 {
   width: 100px;
 }
-
-
 .card 
 {
   overflow: hidden !important;
 }
-
-
-
 .over-lay
   {
     width: 100%;
@@ -329,14 +339,11 @@ div.h4 {
     transition: 1s;
     overflow: auto;
   }
-
   .cont 
   {
     position: relative;
     overflow: hidden;
-   
   }
-
   .likes
   {
     width: 70px;
@@ -345,9 +352,7 @@ div.h4 {
     position: absolute;
     top: 5px;
     right: 10px;
-    
   }
-
   .likes i 
   {
    font-size: 1.2rem;
@@ -357,12 +362,10 @@ div.h4 {
    position: absolute;
    color: white;
   }
-
   .likes:hover i
   {
     color: #ff655c;
   }
-
   .collect
 {
     width: 80px;
@@ -373,25 +376,19 @@ div.h4 {
     top: 5px;
     right: 90px;
 }
-
-
-
 .collect p
 {
   font-size: 1.5rem;
-
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
   position: absolute;
   color: white;
 }
-
 .collect:hover p 
 {
   color: #ff655c;
 }
-
 .go 
 {
   width: 40px;
@@ -402,46 +399,36 @@ div.h4 {
   bottom: 5px;
   right: 10px;
 }
-
 .go i 
 {
-
   font-size: 1.2rem;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
   position: absolute;
   color: white;
-
 }
-
 .go:hover i 
 {
   color: #ff655c;
 }
-
-
-
   .site1:hover .over-lay
   {
    opacity: 1;
-   
-  
   }
-
+  .cont img
+  {
+    transition: all 1s ease-in-out;
+  }
   .site1:hover .cont img
   {
     transform: scale(1.1);
     transition: ease 1s
   }
-
-
  .card-body 
 {
-  
   text-align: right;
 }
-
 .circle
 {
   width: 35px;
@@ -449,7 +436,7 @@ div.h4 {
   border-radius: 50%;
 }
 
-#photo1
+#photo1, #photo2 ,photo3
 {
   background-image: url(../images/png-transparent-bird-of-prey-logo-beak-desktop-bird-animals-computer-logo.png);
   background-position: center center;
@@ -459,36 +446,32 @@ div.h4 {
 #photo2
 {
   background-image: url(../images/png-transparent-phoenix-logo-flame-football-s-daquan-leaf-flower-symbol.png);
-  background-position: center center;
-  background-size: 100%;
-}
 
+}
 #photo3
 {
   background-image: url(../images/pic01.jpg);
-  background-position: center center;
-  background-size: 100%;
 }
-
 .who p 
 {
   font-size:1.4rem
  }
-
-                                   /* end of sites of the day section*/
-
+ /* end of common style*/
   
 
-  
+  /* start nominess */
+.nominess
+{
+  background-color: #f4f7f6;
+}
 .vote-now
 {
-  margin-top: 4rem;;
+  margin-top:  0;
 }
 
 .vote-now .site-cont
 {
   background-color: rgb(221, 221, 221);
-  height: 400vh
 }
 
 .vote-now header 
@@ -505,3 +488,207 @@ div.h4 {
   font-size: 1.4rem;
 }
 
+
+/********** css of the about page **********/
+
+.about-head
+{
+ margin-top: 4rem;
+ margin-bottom: 4rem;
+ 
+}
+.about-head hr
+{
+  
+  width: 80px;
+  height: 4px;
+  text-align: left;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  background-color: #202121;
+  border: none;
+}
+.about-head h1
+{
+  font-size: 40px;
+  font-weight: 500;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  line-height: 1.7;
+  font-family: 'Lemonada', cursive;
+  text-align: right;
+}
+.about-head p
+{
+  text-align: right;
+  font-weight: 150;
+  margin-top: 1rem;
+  margin-bottom: 7rem;
+}
+
+@media (max-width: 700px)
+{ 
+  .about-head h1
+  {
+    font-size: 26px; 
+    text-align: center;
+  } 
+  .about-head p
+  {
+    font-size: 20px; 
+    text-align: center;
+  }  
+}
+
+
+
+/* overlay*/
+
+
+.overlay-section
+{
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+  background-image: url(../images/certificate.jpg);
+  background-size: cover;
+  background-position:center center ;
+  background-attachment: fixed;
+  position: relative;
+}
+.overlay-section .overlay
+{
+  position: absolute;
+  top: 0;
+  left: 0px;
+  background-color: #17a3b898;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+
+/* developers sections*/
+  
+
+.developers
+{
+  padding-top:2.5rem ;
+  padding-bottom:4rem ;
+  background-color: rgb(241, 241, 241);
+}
+.devolper-header
+{
+  position: relative;
+}
+.devolper-header h1
+{
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: 'Lemonada', cursive;
+  margin-bottom: 25px;
+}
+.devolper-header p
+{
+  font-size: 1rem;
+  font-weight: 50;
+  font-family: 'Lemonada', cursive;
+ 
+}
+.header-line
+{
+  position: absolute;
+  left: 50%;
+  top: 11rem;
+  transform: translate(-50%);
+  width: 5%;
+  height: 5px;
+  background-color: #17a2b8;
+  font-family: 'Lemonada', cursive;
+}
+
+.box-shadow
+{
+  margin-top: 5rem;
+  padding: 3rem ;
+  position: relative;
+  background-color: #fff;
+  margin-bottom: 3rem;
+  z-index: 2;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  text-align: right;
+  font-family: 'Lemonada', cursive;
+}
+.about-img img
+{
+  margin-left: 1rem;
+}
+.title-s
+{
+  font-weight: 300;
+  color: #1e1e1e;
+  font-size: 1rem;
+  line-height: .5;
+}
+span
+{
+  font-size: .7rem;
+}
+
+/* books sections*/
+
+.book-section
+{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.book-box
+{
+  margin-top: 7rem;
+  margin-bottom: 3rem;
+  background-color: #fff;
+  box-shadow: 0 13px 8px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.box-img img
+{
+  transition: 1s transform;
+  overflow: hidden;
+}
+.box-img
+{
+  overflow: hidden;
+}
+.book-box:hover .box-img img
+{
+  transform: scale(1.3);
+}
+.header-line2
+{
+  position: absolute;
+  left: 50%;
+  top: 9rem;
+  transform: translate(-50%);
+  width: 5%;
+  height: 5px;
+  background-color: #17a2b8;
+  font-family: 'Lemonada', cursive;
+}
+
+/*** end of the css of the about page ***/
+
+
+
+
+/* footer part */
+.myfootericon a
+{
+  padding: 0 10px;
+}
+.joinus
+{
+  font-size: 35px;
+  color: black;
+}
+/*end  footer part */
